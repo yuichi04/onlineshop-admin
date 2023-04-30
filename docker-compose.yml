@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  admin-site:
+    container_name: admin-site
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
